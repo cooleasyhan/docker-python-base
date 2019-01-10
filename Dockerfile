@@ -4,6 +4,8 @@ ENV PYTHONUNBUFFERED 1
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
+RUN pip config set global.index-url http://pypi.douban.com/simple
+RUN pip config set install.trusted-host pypi.douban.com
 
 RUN apk update \
   # psycopg2 dependencies
