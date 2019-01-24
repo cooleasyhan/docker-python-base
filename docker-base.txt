@@ -33,3 +33,5 @@ django-rest-auth==0.9.3
 pycrypto==2.6.1
 pyzbar==0.1.7
 easy-thumbnails==2.5
+
+raven==6.10.0
