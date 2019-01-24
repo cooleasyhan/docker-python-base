@@ -18,5 +18,5 @@ RUN apk update \
   && apk add gettext
 
 RUN apk add supervisor
-
+RUN pip install gunicorn
 CMD ["python"]
