@@ -19,6 +19,6 @@ RUN apk update \
 
 RUN apk add supervisor
 RUN pip install gunicorn
-COPY . .
-RUN pip install -r requirements.txt
+COPY ./docker-base.txt ./docker-base.txt
+RUN pip install -r docker-base.txt
 CMD ["python"]
