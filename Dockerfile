@@ -19,4 +19,6 @@ RUN apk update \
 
 RUN apk add supervisor
 RUN pip install gunicorn
+COPY . .
+RUN pip install -r requirements.txt
 CMD ["python"]
