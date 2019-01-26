@@ -13,9 +13,11 @@ django-model-utils==3.1.2  # https://github.com/jazzband/django-model-utils
 django-crispy-forms==1.7.2  # https://github.com/django-crispy-forms/django-crispy-forms
 django-redis==4.10.0  # https://github.com/niwinz/django-redis
 
+
 # Django REST Framework
 djangorestframework==3.9.0  # https://github.com/encode/django-rest-framework
-
+django-rest-auth==0.9.3
+drf-yasg==1.12.1
 
 # Mysql
 # ------------------------------------------------------------------------------
@@ -27,11 +29,9 @@ pymysql==0.9.3
 django-celery-beat==1.4.0
 django-celery-results==1.0.4
 
-
-
-django-rest-auth==0.9.3
-pycrypto==2.6.1
-pyzbar==0.1.7
-easy-thumbnails==2.5
-
+# For Prod
 raven==6.10.0
+whitenoise==4.1.2
+
+pycrypto==2.6.1
+easy-thumbnails==2.5
